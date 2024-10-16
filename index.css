@@ -15,9 +15,11 @@ body{
 
 }
 
-/* -------- */
-.title{
-    
+/* header */
+.header-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
     background-color: #ffffff;
     border-radius: 5px;
     border-style: solid;
@@ -30,8 +32,22 @@ body{
 font-size: 300%;
     }
 }
-.abas{
-  text-align: center;
+.login-button button{
+    border: none;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.login-button button a{
+text-decoration: none;
+color: #ffffff;
+font-weight: 500;
+font-size: 1.1rem;
+}
+.nav-list{
+    display: flex;
+justify-content: space-around; 
+ text-align: center;
 a{
   font-size: 130%;
   text-decoration: none;
@@ -39,24 +55,37 @@ a{
   margin-right: 2%;
 }
 }
-
-.aba1:hover {
-opacity: 0.5;
-}
-.aba2:hover {
-opacity: 0.5;
-}
-.aba3:hover {
-opacity: 0.5;
-}
-.aba4:hover {
-opacity: 0.5;
-}
-.aba5:hover {
-opacity: 0.5;
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 
+.aba{
+    display: flex;
+    align-items: center;
+    margin:0
+}
+.link{
+    margin: 0 15px;
+}
 
+.aba:hover {
+opacity: 0.5;
+}
+.mobile-menu{
+    display: none;
+    
+}
+.login-button-mobile{
+    display: none;
+}
+.menu-icon{
+    
+    display: none;
+
+}
+/* ----------------------- */
 
 
 .blocos{
@@ -76,7 +105,7 @@ opacity: 0.5;
     border-style: solid;
     border-color: antiquewhite;
 
-    width: 25%;
+    width: 30%;
     height: auto;
 
      margin-right: 5%;
@@ -117,5 +146,75 @@ opacity: 0.9;
 
 
 @media screen and (max-width: 768px) {    
+    *{
+        
+    }
+.blocos{
+
+    h2{
+        font-size: 80%;
+    }
+h3{
+
+    font-size: 70%;
+}
+    p{
+        font-size: 70%;
+    }
+}
+
+.header-bar{
+    padding: 1.5rem 2rem;
     
+}
+
+.aba{
+    display: none;
+}
+
+.menu-icon{
+    
+    margin-left: 450%;
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: alias;
+    img{
+        width: 6vw;
+        height: 6vh;
+    }
+}
+.login-button{
+    display: none;
+}
+.mobile-menu{
+    display: block;
+}
+
+.menu-icon button{
+background-color: transparent;
+border: none;
+cursor: pointer;
+}
+.mobile-menu ul{
+display: flex;
+flex-direction: column;
+text-align: center;
+padding-bottom: 1rem;
+}
+
+.mobile-menu .aba{
+    display: ;
+    padding: 1rem 2rem;
+
+}
+.mobile-menu .login-button button{
+    width: 50%;
+}
+
+.open{
+display: block;
+}
+
+
 }

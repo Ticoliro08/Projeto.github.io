@@ -5,25 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike</title>
     <link rel="stylesheet" href="index.css">
-    <script src="app.js" defer ></script>
 </head>
 <body>
 
-    <!-- Titulo -->
-    <nav class="title">
-<img src="img/Nike-Logo.png" width="10%" height="20%">
-<nav class="abas">
-    <a class="aba1" href=""> Roupas</a>
-    <a class="aba2" href=""> Esporte</a>
-    <a class="aba3" href=""> Acessorios</a>
-    <a class="aba4" href=""> Acessorios</a>
-    <a class="aba5" href=""> Calçados</a>
-    
-</nav>
-</nav>
-<br><br><br><br><br><br>
+    <!-- TITULO -->
 
-<!-- Blocos -->
+    <!-- lista das abas -->
+
+    <header class="header-bar">
+<img src="img/Nike-Logo.png" width="10%" height="20%">
+<nav class="nav-list">
+    <ul>
+        <li class="aba"><a class="link" href="#"> Roupas</a></li>
+        <li class="aba"><a class="link" href="#"> Esporte</a></li>
+        <li class="aba"><a class="link" href="#"> Acessorios</a></li>
+        <li class="aba"><a class="link" href="#"> Calçados</a></li>
+        <li class="aba"><a class="link" href="#"> Roupas</a></li>
+    </ul>
+</nav>
+<!-- Botão de entrar -->
+<nav class="login-button">
+
+    <button><a href="#">Entrar</a></button>
+
+</nav>
+
+<!-- icon para menu no celular -->
+
+<nav>
+      <div class="menu-icon" >
+        <button onclick="menuShow"><img class="icon" src="img/barra-de-menu.png" width="5%" height="10%"></button>
+      </div>  
+</nav>
+<!-- lista do icon menu para celular -->
+<nav class="mobile-menu">
+
+    <ul>
+        <li class="aba"><a class="link" href="#"> Roupas</a></li>
+        <li class="aba"><a class="link" href="#"> Esporte</a></li>
+        <li class="aba"><a class="link" href="#"> Acessorios</a></li>
+        <li class="aba"><a class="link" href="#"> Calçados</a></li>
+        <li class="aba"><a class="link" href="#"> Roupas</a></li>
+    </ul>
+
+</nav>
+
+<!-- Botão de entrar para celular -->
+<nav class="login-button-mobile">
+
+    <button><a href="#">Entrar</a></button>
+
+</nav>
+
+</header>
+<br><br><br><br><br><br>
+<!--  -->
+
+<!-- Blocos dos Calçados -->
 
     <article class="blocos">
 
@@ -106,6 +144,7 @@
 
     </article>
 
+    <script src="index.js"></script>
 
 </body>
 </html>
