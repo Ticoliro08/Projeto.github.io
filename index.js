@@ -9,16 +9,16 @@
 //     }
 // }
 //----------------------------------------
-function slider (anything){
-    document.querySelector ('.one').src = anything;
-    // Função para mudar a imagem principal com base na imagem clicada
-};
+// function slider (anything){
+//     document.querySelector ('.one').src = anything;
+//     // Função para mudar a imagem principal com base na imagem clicada
+// };
 
-        let menu = document.querySelector ('#menu-icon');
-        let navbar = document.querySelector ('.navbar');
+//         let menu = document.querySelector ('#menu-icon');
+//         let navbar = document.querySelector ('.navbar');
 
-        menu.onclick = () => {
-            menu.classList.toggle ('bx-x');
-            navbar.classList.toggle ('open');
-            // Lógica para abrir/fechar o menu de navegação
-        }
+//         menu.onclick = () => {
+//             menu.classList.toggle ('bx-x');
+//             navbar.classList.toggle ('open');
+//             // Lógica para abrir/fechar o menu de navegação
+//         }
