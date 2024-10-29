@@ -242,12 +242,49 @@ transform: translateY(-20px);
     100% { background-position: 0% 0%; }
 } */
 
-
-@media screen and (max-width: 768px) {    
-    *{
-       padding: 0%; 
+@media screen and (max-width: 768px) {
+    /* Header */
+    .header-bar {
+        flex-direction: column;
+        padding: 2rem;
     }
 
-   
+    .header-bar h1 {
+        font-size: 200%;
+        margin-left: 0;
+        text-align: center;
+    }
 
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-list a {
+        margin: 0.5rem 0;
+    }
+/* Formulario */
+.formulario h1{
+    font-size: 3vw;
 }
+.formulario input{
+    font-size: 2vw;
+}
+    .formulario {
+       
+        width: 60%;
+        padding: 5%;
+    }
+
+
+    .buttonConfirm {
+       
+        width: 20%;
+    }
+/* Blocos */
+
+.bloco {
+    width: 50%;
+    margin: 1rem 0;
+}
+}
+
