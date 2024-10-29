@@ -1,5 +1,5 @@
 body{
-background-color:#948c75;    
+background-color:#eae8ec;    
 /* background-attachment: fixed;
     background-size: cover;
     animation: fundomechendo 50s infinite linear;
@@ -7,6 +7,7 @@ background-color:#948c75;
 }
 
 * {
+
 
     margin: 0;
     padding: 0;
@@ -19,7 +20,9 @@ background-color:#948c75;
 .header-bar{
     display: flex;
     justify-content:center;
+    justify-content: space-evenly;
     padding: 4rem 6rem;
+    padding-bottom: 5rem;
     
 
     height: auto; 
@@ -30,22 +33,21 @@ font-size: 300%;
     }
 }
 .login-button{
-    padding-left: 15%;
     transition: all .5s ease;
 
 }
 
 .login-button button{
-    background-color:#d5ded9;
+    background-color:#bfbbc5;
     padding: 10px 15px;
     
     border-radius: 5px;
-    box-shadow: 5px 5px;
+    box-shadow: 2px 2px;
 }
 
 .login-button a{
 text-decoration: none;
-color:#7a6a53;
+color:#eae8ec;
 font-weight: 500;
 font-size: 1.1rem;
 
@@ -55,7 +57,8 @@ font-size: 1.1rem;
 transform: translateY(-10px);   
 } 
 .login-button:hover button{
-    background-color: #99b2b7;
+    
+    background-color: black;
 }
 
 
@@ -66,7 +69,7 @@ transform: translateY(-10px);
 a{
   font-size: 130%;
   text-decoration: none;
-  color:#d5ded9;
+  color:#bfbbc5;
   margin-right: 2%;
 }
 }
@@ -81,7 +84,7 @@ a{
     display: flex;
     align-items: center;
     margin:0;
-    padding: 1.5%;
+    padding: 2.5%;
 
     transition: all .10s ease;
 
@@ -91,7 +94,7 @@ a{
 
 
 .aba:hover a{
-color: #99b2b7;
+color: black;
 }
 
 .mobile-menu{
@@ -100,49 +103,111 @@ color: #99b2b7;
 
 /* ----------- FORMULARIO---------- */
 
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    color:#bfbbc5;
+  }
+  
+  
+  .form h1{
+    padding: 5%;
+
+    
+    font-size: 2vw;
+  }
+  
+  .form input{
+  padding-bottom: 3%;
+    margin-bottom: 5%;
+    height: 40px;
+
+    border-radius: 5px;
+    border: 2px solid ;
+    box-shadow: 2px 2px ;
+
+    font-size: 1vw;
+  
+    cursor: pointer;
+  }
+
+
 .formulario{
     display: flex;
-    align-items: center;
-
-
-    width: 20%;
-    height: auto;
-}
-    
-.containerFormulario{
-    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 30%;
+
+    padding: 2%;
+    background: #ffffff;
+  
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    transition: all .5s ease;
+
 }
+
+.formulario:hover{
+
+    transform: translateY(-20px);
+
+ border: 2px solid black;
+    }
+
+
+  .buttonConfirm{
+    margin: 50px auto 0 auto;
+    width: 120px;
+    height: 40px;
+
+    border-radius: 5px;
+    border: 2px solid ;
+    box-shadow: 4px 4px ;
+
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  
+  
+  
+  
 
 /* --------- BLOCOS -------------- */
 
 
 .blocos{
     display: flex;
-    flex-wrap: wrap;
+flex-wrap: wrap;
 
-    width: 100%;
+   
     justify-content: center;
     
 
 }
 
 .bloco{
-    background-color: #7a6a53;
+    background-color: #ffffff;
 
-    
-
+    font-size: 70%;
+    color: #bfbbc5;
     width: 25%;
     height: auto;
 
-     margin-right: 5%;
-     margin-bottom: 5%;
+    
 
      transition: all .5s ease;
 
     h2{
         padding: 3% 0% 3%;
        text-align: center;
+       font-size: 2vw;
 
     }
     h3{
@@ -182,48 +247,7 @@ transform: translateY(-20px);
     *{
        padding: 0%; 
     }
-.bloco{
-  
-    flex-direction: column;
-    border-radius: none;
+
+   
+
 }
-
-
-
-
-.blocos{
-    width: 100%;
-height: 30%;
-    h2{
-        font-size: 80%;
-    }
-h3{
-
-    font-size: 70%;
-}
-    p{
-        font-size: 70%;
-    }
-}
-
-.header-bar{
-    padding: 1.5rem 2rem;
-    
-}
-
-.aba{
-    display: none;
-}
-
-
-.login-button{
-    display: none;
-}
-
-
-
-
-
- .login-button button{
-    width: 50%;
-}   
