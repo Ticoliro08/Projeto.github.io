@@ -75,7 +75,7 @@ font-size: 1.1rem;
  text-align: center;
 
 a{
-  font-size: 130%;
+  font-size: 1.5vw;
   text-decoration: none;
   color:#bfbbc5;
   margin-right: 2%;
@@ -108,6 +108,48 @@ color: black;
 .mobile-menu{
     display: none;
 }
+
+/* -------------- HOME ------------------- */
+.parallax {
+display: flex;
+justify-content: center;
+
+    background-image: url("img/skateboard-pavement.jpg");
+  
+    min-height: 300px; 
+
+    /*  parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+  }
+
+  /* -------- SLIDER ---------- */
+#slider {
+    display: flex; /* Flexbox para centralizar o slider */
+    justify-content: center; /* Centraliza conteúdo do slider */
+
+    width: auto; /* Largura do slider */
+    height: 50%; /* Altura do slider */
+
+    overflow: hidden; /* Oculta conteúdo que excede o tamanho */
+
+    padding-top: 5%;
+    padding-bottom: 30%; /* Espaço inferior */
+
+    transition: all .5s ease; /* Transição suave */
+}
+
+#slider img {
+    background-size: cover; /* Imagens ocupam toda a área */
+    width: 50%; /* Largura das imagens */
+    height: 70%; /* Altura das imagens */
+    position: absolute; /* Permite sobreposição das imagens */
+}
+
 
 /* ----------- FORMULARIO---------- */
 
