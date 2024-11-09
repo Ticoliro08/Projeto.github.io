@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // // Seleciona todas asimagens do slider
 // const imagens = document.querySelectorAll("#slider img");
 
@@ -56,8 +57,15 @@ const visu = new IntersectionObserver ((entries) =>{
     }
   })
 })
+=======
+const confirm = document.getElementById("confirm")
+>>>>>>> f0cae99347247d63349e183fba130e9822214e7a
 
 const elements = document.querySelectorAll(".blocoText")
 
 elements.forEach((element) => visu.observe(element))
 
+confirm.addEventListener("submit", function(event) {
+  
+ alert('Cadastro feito!')
+});
