@@ -29,7 +29,8 @@ background-color:#eae8ec;
     
 
     height: auto; 
-    
+
+   
     h1{
         margin-left: 10%;
 font-size: 300%;
@@ -74,6 +75,10 @@ font-size: 1.1rem;
     display: flex;
  text-align: center;
 
+ animation: bounce; /* referring directly to the animation's @keyframe declaration */
+ animation-duration: 2s; /* don't forget to set a duration! */
+ 
+
 a{
   font-size: 1.5vw;
   text-decoration: none;
@@ -88,16 +93,12 @@ a{
     
 }
 
+
 .aba{
     display: flex;
     align-items: center;
     margin:0;
     padding: 2.5%;
-
-    transition: all .10s ease;
-
-
-
 }
 
 
@@ -127,29 +128,61 @@ justify-content: center;
     
   }
 
+  /* ___________ Bloco Text */
+  .blocoText{
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20%;
+
+    transform: rotateX(-100%);
+    filter: blur(15px);
+    opacity: 0;
+
+    transition: all 2s;
+  }
+  .blocoText_show{
+ 
+    transform: rotateX(0);
+filter: blur(0);
+    opacity: 1;
+  }
+
   /* -------- SLIDER ---------- */
-#slider {
-    display: flex; /* Flexbox para centralizar o slider */
-    justify-content: center; /* Centraliza conteúdo do slider */
-
-    width: auto; /* Largura do slider */
-    height: 50%; /* Altura do slider */
-
-    overflow: hidden; /* Oculta conteúdo que excede o tamanho */
-
-    padding-top: 5%;
-    padding-bottom: 30%; /* Espaço inferior */
-
-    transition: all .5s ease; /* Transição suave */
+/* Estilo básico do slider */
+/* #slider {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
 }
 
 #slider img {
-    background-size: cover; /* Imagens ocupam toda a área */
-    width: 50%; /* Largura das imagens */
-    height: 70%; /* Altura das imagens */
-    position: absolute; /* Permite sobreposição das imagens */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
+/* Estilo para os botões */
+/* .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+} */ 
 
 /* ----------- FORMULARIO---------- */
 
